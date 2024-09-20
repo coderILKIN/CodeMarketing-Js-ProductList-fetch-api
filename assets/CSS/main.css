@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 16px 0px;
+}
+
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+
+.header-container{
+    background-color:rgb(45, 185, 138);
+    padding: 12px 15px;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container nav a{
+    text-decoration: none;
+}
+
+
+nav a i{
+    color: white;
+    font-size: 30px;
+
+    
+}
+
+
+.products{
+    margin-top: 40px;
+}
+
+
+.products .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+}
+ .grid-container .grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+
+.grid-container .grid-item h4{
+    font-size: 18px;
+    
+}
+
+
+.grid-container .grid-item i{
+    position: absolute;
+    right: 10px;
+    top:-15px;
+}
+
+.grid-container .grid-item img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.products .grid-item .money{
+    color: red;
+    font-size: 18px;
+
+}
+
+.grid-container .grid-item button{
+    margin-top: 8px;
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+
+.grid-container .grid-item i{
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: green;
+}
+
+.basket-list{
+    margin-top: 7px;
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    z-index: 100;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.basket-list ul{
+    
+}
+
+.basket-list img{
+    width: 60px;
+}
+
+.basket-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+  column-gap: 90px;
+}
+
+.basket-list li i{
+    cursor: pointer;
+    color: red;
+}
